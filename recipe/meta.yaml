@@ -17,11 +17,11 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core >=3.2,<4
+    - flit-core ==3.10.1
     - pip
   run:
-    - python >={{ python_min }},<4.0
-    - apache-airflow >=2.7.0
+    - python >={{ python_min }},<4.dev0
+    - apache-airflow >=2.9.0
 
 test:
   imports:
