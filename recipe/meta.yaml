@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-iceberg" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_iceberg-{{ version }}.tar.gz
-  sha256: 025a887aa0be9b127196e5fa23846c3ea23db5099f5d4ddcc4790ddb1fce5f95
+  sha256: d3938c02e8adb14cb195c6e83bb192ea4ec857e0514fa78bc5d2ad5d6c01d470
 
 build:
   noarch: python
