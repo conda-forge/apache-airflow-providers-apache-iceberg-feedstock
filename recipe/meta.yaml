@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-iceberg" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_iceberg-{{ version }}.tar.gz
-  sha256: 025a887aa0be9b127196e5fa23846c3ea23db5099f5d4ddcc4790ddb1fce5f95
+  sha256: d3938c02e8adb14cb195c6e83bb192ea4ec857e0514fa78bc5d2ad5d6c01d470
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
@@ -36,7 +36,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-apache-iceberg for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/apache/iceberg/LICENSE
+  license_file: src/airflow/providers/apache/iceberg/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-iceberg/stable/index.html
   dev_url: https://github.com/apache/airflow/
