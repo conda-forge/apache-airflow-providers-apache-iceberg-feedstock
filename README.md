@@ -11,7 +11,7 @@ Summary: Provider package apache-airflow-providers-apache-iceberg for Apache Air
 
 Development: https://github.com/apache/airflow/
 
-Documentation: https://airflow.apache.org/docs/apache-airflow-providers-iceberg/stable/index.html
+Documentation: https://airflow.apache.org/docs/apache-airflow-providers-apache-iceberg/stable/index.html
 
 Current build status
 ====================
