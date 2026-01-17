@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-apache-iceberg" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_apache_iceberg-{{ version }}.tar.gz
-  sha256: 53506fa867876e18e55c9397cd1bd359fc4a11d8a2d22b92f362d5815d097a06
+  sha256: 43ffee6d22dc6342fc7f3b4808a36e6e5610f37341421343d523ee4119a303da
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.11.0
 
