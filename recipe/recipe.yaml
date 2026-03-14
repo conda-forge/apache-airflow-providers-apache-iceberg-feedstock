@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-iceberg
-  version: "1.4.1"
+  version: "2.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_iceberg-${{ version }}.tar.gz
-  sha256: 43ffee6d22dc6342fc7f3b4808a36e6e5610f37341421343d523ee4119a303da
+  sha256: 8e9b2f16ca61e4fb4f6de1e09558d039008a755c49f92f5825aa1aaf68438e29
 
 build:
   noarch: python
@@ -24,11 +24,12 @@ requirements:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
     - apache-airflow-providers-common-compat >=1.8.0
+    - pyiceberg >=0.8.0
 
 tests:
   - python:
       imports:
-      - airflow.providers.apache.iceberg
+        - airflow.providers.apache.iceberg
       pip_check: true
       python_version: ${{ python_min }}.*
 
