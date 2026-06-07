@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-apache-iceberg
-  version: "2.0.2"
+  version: "2.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_apache_iceberg-${{ version }}.tar.gz
-  sha256: f85f7b4fce75929b97648b81f13d0824f801f36359b41f45bc916ee238c6ea2a
+  sha256: 0e7ea6bbc266dc99f0f579346d03442f3f2f8ac5e82327c61f9301b4b79687f1
 
 build:
   noarch: python
